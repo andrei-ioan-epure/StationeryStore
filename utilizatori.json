@@ -1,0 +1,1 @@
+[{"utilizator": "test", "parola": "test","tip":"USER" ,"nume": "nume1", "prenume": "prenume1", "email": "test1@gmail.com"}, {"utilizator": "admin", "parola": "admin","tip":"ADMIN" , "nume": "nume2", "prenume": "prenume2", "email": "test2@gmail.com"}]

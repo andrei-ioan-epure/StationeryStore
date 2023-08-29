@@ -1,0 +1,28 @@
+<p class="logged">Autentificat ca <%=nume%></p>
+<a class="button-right" href="/logout">LogOut</a>
+<br /><br />
+<div class="chestionar">
+  <br /><br />
+  <h1>Chestionar</h1>
+  <div class="intrebari">
+    <form action="/rezultat-chestionar" method="post">
+      <% for(var element of intrebari) { %>
+      <div>
+        <h4>
+          <%= intrebari.indexOf(element)+1 %>. <%= element["intrebare"] %>
+        </h4>
+        <% for(var q of element["variante"]) { %> <input type="radio" name="<%=
+        intrebari.indexOf(element) %>" value="<%= element["variante"].indexOf(q)
+        %>"/> <%= q %>
+        <br />
+        <% } %>
+      </div>
+      <br />
+      <br />
+      <br />
+      <% }%>
+
+      <button class="button type="submit">Gata</button>
+    </form>
+  </div>
+</div>

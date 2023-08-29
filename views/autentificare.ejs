@@ -1,0 +1,16 @@
+<div class="chestionar">
+  <h1>Autentificare</h1>
+  <% if(mesaj==='true') { %>
+  <p style="color: #f00">Utilizator sau parola gresita</p>
+  <% }%>
+
+  <form action="/verificare-autentificare" method="post">
+    <label for="utilizator">Nume utilizator:</label>
+    <input type="text" id="utilizator" name="utilizator" required />
+    <br /><br />
+    <label for="parola">Parolă:</label>
+    <input type="password" id="parola" name="parola" required />
+    <br /><br />
+    <button class="button" type="submit">Login</button>
+  </form>
+</div>

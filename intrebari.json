@@ -1,0 +1,82 @@
+[
+   {
+    "intrebare": "Care este cel mai important factor pentru dvs. atunci când creați un document?",
+    "variante": [
+      "Aspect și designul documentului",
+      "Conținutul și informațiile prezentate în document",
+      "Formatarea și organizarea documentului"
+    ],
+    "corect": "1"
+  },
+   {
+    "intrebare": "Cum vă organizați documentele pentru a le găsi mai ușor?",
+    "variante": [
+      "Utilizez un sistem de fișiere pe calculatorul meu",
+      "Utilizez un serviciu de stocare în cloud, cum ar fi Google Drive sau Dropbox",
+      "Utilizez un instrument de gestionare a documentelor, cum ar fi Evernote sau OneNote"
+    ],
+    "corect": "1"
+  },
+
+   {
+    "intrebare": "Cum protejați documentele împotriva accesului neautorizat?",
+    "variante": [
+      "Utilizez o parolă pentru a proteja documentele",
+      "Utilizez o criptare pentru a proteja documentele",
+      "Nu iau măsuri pentru documentele mele"
+    ],
+    "corect": "0"
+  },
+
+   {
+    "intrebare": "Cum vă asigurați că documentele dvs. sunt actualizate și corecte?",
+    "variante": [
+      "Verific documentele manual înainte de a le utiliza",
+      "Utilizez un instrument de verificare ortografică și gramaticală",
+      "Utilizez un instrument de verificare a faptelor și a informațiilor"
+    ],
+    "corect": "1"
+  },
+
+   {
+    "intrebare": "Cum vă asigurați că documentele dvs. sunt accesibile pentru toți utilizatorii?",
+    "variante": [
+      "Cum vă asigurați că documentele dvs. sunt accesibile pentru toți utilizatorii?",
+      "Utilizez un instrument de conversie a documentelor pentru a le transforma într-un format accesibil",
+      "Utilizez un instrument de conversie a documentelor pentru a le transforma într-un format accesibil"
+    ],
+    "corect": "2"
+  },
+
+
+  {
+    "intrebare": "Care este cel mai popular produs de papetărie?",
+    "variante": [
+      "Caiete și blocnotes-uri",
+      "Creioane și stilouri",
+      "Clasificatoare și dosare"
+    ],
+    "corect": "0"
+  },
+  {
+    "intrebare": "Ce este un stilou cu bilă?",
+    "variante": [ "Un instrument de scris care utilizează cerneală lichidă",
+    "Un instrument de scris care utilizează cerneală solidă",
+    "Un instrument de scris care utilizează un gel special"],
+    "corect": "0"
+  },
+  {
+    "intrebare":"Ce este un clasificator?",
+    "variante": [ " Un instrument de scris care utilizează cerneală lichidă",
+     " Un instrument de scris care utilizează cerneală solidă",
+      "Un instrument de organizare pentru documente" ],
+    "corect": "2"
+  },
+  {
+    "intrebare": "Ce este un dosar?",
+    "variante": [ "Un instrument de scris care utilizează cerneală lichidă",
+    "Un instrument de scris care utilizează cerneală solidă",
+    "Un instrument de organizare pentru documente" ],
+    "corect": "2"
+  }
+]

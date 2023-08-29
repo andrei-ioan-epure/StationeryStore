@@ -1,0 +1,33 @@
+<p class="logged">Autentificat ca <%=nume%></p>
+<a class="button-right" href="/logout">LogOut</a>
+<br /><br />
+<div class="chestionar">
+  <br /><br />
+  <h1>Coșul meu</h1>
+  <p>Produsele dumneavoastra:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Produs</th>
+        <th>Cantitate</th>
+        <th>Pret</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% var pretTotal=0; %> <% for (let i = 0; i < produseleMele.length; i++) {
+      %>
+      <tr>
+        <td><%= produseleMele[i].nume %></td>
+        <td><%= produseleMele[i].cantitate %></td>
+        <td><%= produseleMele[i].pret %></td>
+
+        <% pretTotal+= produseleMele[i].pret %>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <p>Pret total : <%= pretTotal %></p>
+  <br /><br />
+  <a class="button" href="/">Înapoi</a>
+</div>

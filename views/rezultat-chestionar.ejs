@@ -1,0 +1,27 @@
+<p class="logged">Autentificat ca <%=nume%></p>
+<a class="button-right" href="/logout">LogOut</a>
+<br /><br />
+<div class="chestionar">
+  <br /><br />
+  <h1>Rezultat chestionar</h1>
+  <p>
+    Ați răspuns corect la <b><%= rezultat %></b> întrebări din
+    <b> <%= intrebari.length %></b>.
+  </p>
+  <ul>
+    <% for (let i = 0; i < intrebari.length; i++) { %>
+    <li>
+      Intrebarea <%= i+1 %> (<%= intrebari[i].intrebare %>) <% if (raspunsuri[i]
+      === intrebari[i].corect.toString()) { %>
+      <span style="color: #00cd00"><b>Corect</b></span>
+      <% } else { %> <% if (typeof raspunsuri[i] === "undefined") { %><span
+        style="color: #e444e2"
+        ><b>Incomplet</b>
+      </span>
+      <% } else { %>
+      <span style="color: #ff0000"><b> Greșit</b> </span>
+      <% } } %>
+    </li>
+    <% } %>
+  </ul>
+</div>

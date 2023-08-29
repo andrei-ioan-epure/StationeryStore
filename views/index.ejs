@@ -1,0 +1,58 @@
+<br /><br />
+<div class="chestionar">
+  <%if( typeof nume !== 'undefined' ){%>
+  <p class="logged">Autentificat ca <%=nume%></p>
+  <a class="button-right" href="/logout">Deconectare</a>
+  <%if( tip === 'ADMIN' ){%>
+  <a class="button" href="/admin">ADMIN</a>
+  <%}%>
+  <br /><br />
+
+  <br />
+  <h2 style="text-align: center">Bine ai venit,<%=nume%>!</h2>
+  <br /><br /><br />
+    <div style="display: flex;">
+
+  <a class="button" style="display: inline;" href="/chestionar">Deschide Chestionar</a>
+
+  <br /><br /><br />
+  <form action="/creare-bd" method="get">
+    <button class="button" style="left: calc(50% - 250px); display: inline;" >Creare BD</button>
+  </form>
+  <br /><br /><br />
+  <form action="/inserare-bd" method="get">
+    <button class="button" style="left: calc(50% + 250px); display: inline;">Încarcare BD</button>
+  </form>
+<br /><br /><br />
+  <form action="/vizualizare_cos" method="post">
+  <button class="button" style="  position: absolute;top: calc(60%); ">Vizualizare cos</button>
+  </form>
+
+  </div>
+  <%} else{%>
+  <a class="button" href="/autentificare">Autentificare</a>
+  <%}%>
+
+  <br /><br /><br /><br /><br />
+
+  <% if(typeof produse !='undefined') { %>
+  <h2>Produse:</h2>
+  <% for (var i=0;i<produse.length;i++) {%>
+  <div style="display: flex; align-items: center;">
+    <p style="margin-right: 10px;">Nume: <%= produse[i].nume %></p>
+    <p style="margin-right: 10px;">Pret: <%= produse[i].pret %></p>
+    <%if( typeof nume !== 'undefined' ){%>
+      
+        <form action="/adaugare_cos" method="post">
+        <input type="hidden" name="id" value=" <%= produse[i].id %>">
+        <button  class="button" style="left: calc(50% + 250px)">Adaugă în coș</button>
+        </form>
+    <%}%>
+
+  </div>
+  <%}%>
+  <%}%>
+
+
+
+</div>

@@ -1,0 +1,28 @@
+<p class="logged">Autentificat ca <%=nume%></p>
+<a class="button-right" href="/logout">LogOut</a>
+<br /><br />
+<div class="chestionar">
+  <br /><br />
+  <h2>Admin</h2>
+
+  <h3>Adaugare produs nou</h3>
+
+  <form action="inserare-bd-nou" method="post">
+    <label for="produs">Nume produs:</label>
+    <input
+      type="text"
+      id="produs"
+      name="produs"
+      pattern="[a-zA-Z0-9 ]+"
+      required
+    />
+    <br /><br />
+    <label for="pret">Preț:</label>
+    <input type="number" id="pret" name="pret" min="0" required />
+    <br /><br />
+    <button class="button" type="submit">Adăugare</button>
+    <br /><br />
+  </form>
+  <br /><br />
+  <a class="button" href="/">Înapoi</a>
+</div>
